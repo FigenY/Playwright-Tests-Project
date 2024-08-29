@@ -31,6 +31,7 @@ public class _04_CssAndXPath extends TestBase {
         Locator nthMatch = page.locator(":nth-match(:has-text('practice'),3)");
         System.out.println("nthMatch.innerText() = " + nthMatch.innerText());
 
-
+        Locator xpath = page.locator("//legend[text()='Switch To Alert Example']");
+        System.out.println("xpath.innerText() = " + xpath.innerText());
     }
 }
